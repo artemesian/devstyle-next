@@ -21,7 +21,7 @@ function ComingSoon() {
       }}
     >
       <title> Coming Soon | Wait For It</title>
-      <video autoPlay controls loop width={"90%"} muted ref={vidRef}>
+      <video autoPlay loop width={"100%"} muted ref={vidRef}>
         <source
           src={"/assets/videos/_DevStyle Coming Back.mp4"}
           type="video/mp4"

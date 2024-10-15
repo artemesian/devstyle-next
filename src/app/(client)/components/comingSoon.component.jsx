@@ -23,7 +23,7 @@ function ComingSoon() {
       <title> Coming Soon | Wait For It</title>
       <video autoPlay controls loop width={"90%"} muted ref={vidRef}>
         <source
-          src={"/assets/videos/_DevStyle Coming Soon.mp4"}
+          src={"/assets/videos/_DevStyle Coming Back.mp4"}
           type="video/mp4"
         />
       </video>

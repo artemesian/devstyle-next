@@ -579,10 +579,10 @@ const Home = ({ searchParams }: { searchParams: { affiliate: string } }) => {
                 <Grid
                   item
                   xs={12}
-                  lg={i === collections.length - 1 && collections.length % 2 === 1 ? 12 : 6}
+                  lg={(i === collections.length - 1 && collections.length % 2 !== 0)? 12 : 6}
                   key={i + "" + collection._id}
                 >
-                  {i === collections.length - 1 && collections.length % 2 === 1 ? (
+                  {i === collections.length - 1 ? (
                     <Grid
                       container
                       style={{
@@ -601,7 +601,7 @@ const Home = ({ searchParams }: { searchParams: { affiliate: string } }) => {
                         item
                         xs={10}
                         paddingX={
-                          !match1000 ? 10 : 4
+                          i === collections.length - 1 && !match1000 ? 10 : 4
                         }
                         justifyItems={"center"}
                         alignContent={"center"}

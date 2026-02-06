@@ -579,10 +579,10 @@ const Home = ({ searchParams }: { searchParams: { affiliate: string } }) => {
                 <Grid
                   item
                   xs={12}
-                  lg={i === collections.length - 1 || collections.length % 2 === 0 ? 12 : 6}
+                  lg={i === collections.length - 1 && collections.length % 2 === 1 ? 12 : 6}
                   key={i + "" + collection._id}
                 >
-                  {i === collections.length - 1 || collections.length % 2 === 0 ? (
+                  {i === collections.length - 1 && collections.length % 2 === 1 ? (
                     <Grid
                       container
                       style={{
@@ -601,7 +601,7 @@ const Home = ({ searchParams }: { searchParams: { affiliate: string } }) => {
                         item
                         xs={10}
                         paddingX={
-                          (i === collections.length - 1 || collections.length % 2 === 0) && !match1000 ? 10 : 4
+                          !match1000 ? 10 : 4
                         }
                         justifyItems={"center"}
                         alignContent={"center"}
@@ -611,7 +611,7 @@ const Home = ({ searchParams }: { searchParams: { affiliate: string } }) => {
                         <Typography
                           className={`collection-item-title  
                             ${
-                            (i === collections.length - 1 || collections.length % 2 === 0) && !match1000
+                            !match1000
                               ? "large"
                               :
                               ""
@@ -623,7 +623,7 @@ const Home = ({ searchParams }: { searchParams: { affiliate: string } }) => {
                         </Typography>
                         <Button 
                           className={`button ${
-                            (i === collections.length - 1 || collections.length % 2 === 0) && !match1000
+                           !match1000
                               ? "large"
                               : ""
                           }`}

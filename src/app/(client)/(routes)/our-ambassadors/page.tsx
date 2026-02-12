@@ -121,7 +121,7 @@ const Ambassador = () => {
           Rejoins le programme <b>DSA</b>
         </Typography>
         <a
-          href="https://bit.ly/devstyle_brand"
+          href="https://bit.ly/devstyle-brand"
           target={"_blank"}
           style={{ textDecoration: "none" }}
           rel="noreferrer"
